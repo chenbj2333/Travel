@@ -19,15 +19,15 @@ export default {
       swiperOption: {
         pagination: {
           el: '.swiper-pagination',
-          bulletActiveClass : 'swiper-bullet-active',
+          bulletActiveClass: 'swiper-bullet-active'
         },
         loop: true,
-        autoplay:true,
+        autoplay: true
       },
       swiperList: [
         {id: '0001', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/15/9250dbc86a456302.jpg_640x200_4c7220d4.jpg'},
         {id: '0002', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/5c/969bfa7af00a2702.jpg_640x200_e1b76963.jpg'},
-        {id: '0003', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/1b/6c766b79e2045102.jpg_640x200_3e44c74a.jpg'},
+        {id: '0003', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/1b/6c766b79e2045102.jpg_640x200_3e44c74a.jpg'}
       ]
     }
   }
