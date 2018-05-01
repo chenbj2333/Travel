@@ -34,7 +34,7 @@ export default {
         {id: '006', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png', desc: '故宫'},
         {id: '007', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png', desc: '古北水镇'},
         {id: '008', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png', desc: 'Q+精选'},
-        {id: '009', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png', desc: '自定义内容'}
+        {id: '009', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png', desc: '全部玩乐'}
       ]
     }
   },
@@ -67,7 +67,8 @@ export default {
     padding-bottom: 44%
     display: flex
     text-align: center
-
+  .icons
+    margin-top: .04rem
     .icon
       float: left
       width: 25%
