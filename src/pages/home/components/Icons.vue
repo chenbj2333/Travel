@@ -52,11 +52,15 @@ export default {
   @import '~styles/varibles.styl';
 
   .icons >>> .swiper-bullet-active {
-    background: $bgColor;
-    opacity: .9;
+    background: $bgColor
+    opacity: .9
   }
   .icons >>> .swiper-pagination-bullets {
     bottom: 0
+  }
+  .icons >>> .swiper-pagination-bullet {
+    width: 6px
+    height: 6px
   }
   .icons >>> .swiper-container
     height: 0
