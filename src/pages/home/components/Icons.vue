@@ -17,25 +17,18 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    iconList: Array
+  },
   data () {
     return {
       swiperOption: {
         pagination: {
           el: '.swiper-pagination',
           bulletActiveClass: 'swiper-bullet-active'
-        }
-      },
-      iconList: [
-        {id: '001', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png', desc: '景点门票'},
-        {id: '002', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png', desc: '必游榜单'},
-        {id: '003', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png', desc: '踏青赏花'},
-        {id: '004', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png', desc: '一日游'},
-        {id: '005', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png', desc: '动植物园'},
-        {id: '006', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/6c/9e54a8540fee0102.png', desc: '故宫'},
-        {id: '007', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/67/9a1678221b8e0e02.png', desc: '古北水镇'},
-        {id: '008', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png', desc: 'Q+精选'},
-        {id: '009', imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png', desc: '全部玩乐'}
-      ]
+        },
+        autoplay: false
+      }
     }
   },
   computed: {
@@ -62,9 +55,12 @@ export default {
     background: $bgColor;
     opacity: .9;
   }
+  .icons >>> .swiper-pagination-bullets {
+    bottom: 0
+  }
   .icons >>> .swiper-container
     height: 0
-    padding-bottom: 44%
+    padding-bottom: 49%
     display: flex
     text-align: center
   .icons

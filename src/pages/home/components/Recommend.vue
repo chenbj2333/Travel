@@ -19,14 +19,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {id: '0001', imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/49/7fd4ed94b22959fd680584185619bdae.water.jpg_200x200_aa11bcb6.jpg', title: '沈阳世博园', desc: '辽宁省沈阳市浑南区近郊高坎镇中马村双园路301号'},
-        {id: '0002', imgUrl: 'http://img1.qunarzz.com/tuan/team2/1507/f6/1e52bc3a6de6d.jpg_200x200_e8d901d6.jpg', title: '沈阳方特欢乐世界', desc: '辽宁省沈阳市市沈北新区道义开发区盛京大街55号'},
-        {id: '0003', imgUrl: 'http://img1.qunarzz.com/sight/p0/1706/23/238f540754b2bdd1a3.water.jpg_200x200_86c3c010.jpg', title: '七星海世界', desc: '辽宁省沈阳市沈北新区盛京大街53号'}
-      ]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
@@ -39,7 +33,7 @@ export default {
     line-height .8rem
     background #eeeeee
     text-indent .2rem
-  
+
   .item
     overflow hidden
     display flex
@@ -62,14 +56,17 @@ export default {
 
     .item-desc
       line-height .4rem
-      color: #cccccc
+      color: #888
+      font-size: .24rem
       ellipsis()
 
     .item-btn
+      height .44rem
       line-height .44rem
+      font-size: .24rem
       background #ff9300
       padding 0 .2rem
-      border-border-radius .06rem
+      border-radius .06rem
       margin-top .16rem
       color #fff
 </style>
