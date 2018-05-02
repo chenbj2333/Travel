@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import CityHeader from './components/header'
-import CitySearch from './components/search'
+import CityHeader from './components/Header'
+import CitySearch from './components/Search'
 
 export default {
   name: 'City',
