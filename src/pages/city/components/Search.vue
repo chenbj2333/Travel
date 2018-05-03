@@ -15,7 +15,8 @@
         <li
           class="search-item border-bottom"
           v-for="item of list"
-          :key="item.id">
+          :key="item.id"
+          @click="handleCityClk(item.name)">
           {{item.name}}
         </li>
         <li v-show="hasNoData" class="search-item border-bottom">
@@ -71,6 +72,12 @@ export default {
   },
   mounted () {
     this.scroll = new Bscroll(this.$refs.search)
+  },
+  methods: {
+    handleCityClk (city) {
+      this.$store.dispatch('changeCity', city)
+      this.$router.push('/')
+    }
   }
 }
 </script>
