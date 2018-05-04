@@ -51,7 +51,7 @@ export default {
     display flex
     flex-direction column
     justify-content center
-    z-z-index 99
+    z-index 99
     position fixed
     top 0
     left 0
